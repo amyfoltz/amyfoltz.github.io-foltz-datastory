@@ -60,7 +60,7 @@ footer#personal {
   grid-gap: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
 }
 footer#personal2 {
   display:block;
@@ -68,7 +68,7 @@ footer#personal2 {
   grid-gap: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
 }
 footer#personal3 {
   display:block;
@@ -76,7 +76,7 @@ footer#personal3 {
   grid-gap: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
 }
 .column {
   float: left;
