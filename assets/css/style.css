@@ -54,26 +54,32 @@ section#datavizexp {
   padding-bottom: 20px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
-section#personal {
-  display:block;
+footer#personal {
+  display:footer;
   grid-gap: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
-section#personal2 {
-  display:block;
+footer#personal2 {
+  display:footer;
   grid-gap: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
-section#personal3 {
-  display:block;
+footer#personal3 {
+  display:footer;
   grid-gap: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+.column {
+  float: left;
+  width: 31%;
+  margin: 20px 1.15%;
+  height: 160px;
 }
 section#person {
   display:block;
@@ -162,19 +168,8 @@ section#datavizexp div{
 }
 
 /* Personal */
-section#personal div{
-  grid-area: section;
-  width: 300px;
-  float:left
-  background-color: #910000A0;
-  border: 2px solid #78B9E3;
-  padding: 15px;
-  display:grid;
-  grid-gap: 250px;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr))
-}
-section#personal2 div{
-  grid-area: section;
+footer#personal div{
+  grid-area: footer;
   width: 300px;
   background-color: #910000A0;
   border: 2px solid #78B9E3;
@@ -183,8 +178,18 @@ section#personal2 div{
   grid-gap: 250px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr))
 }
-section#personal3 div{
-  grid-area: section;
+footer#personal2 div{
+  grid-area: footer;
+  width: 300px;
+  background-color: #910000A0;
+  border: 2px solid #78B9E3;
+  padding: 15px;
+  display:grid;
+  grid-gap: 250px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr))
+}
+footer#personal3 div{
+  grid-area: footer;
   width: 300px;
   background-color: #910000A0;
   border: 2px solid #78B9E3;
