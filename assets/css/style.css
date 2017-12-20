@@ -55,21 +55,24 @@ section#datavizexp {
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
 footer#personal {
-  display:footer;
+  display:block;
+  float:left;
   grid-gap: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
 footer#personal2 {
-  display:footer;
+  display:block;
+  float:center;
   grid-gap: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
 footer#personal3 {
-  display:footer;
+  display:block;
+  float:right;
   grid-gap: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
