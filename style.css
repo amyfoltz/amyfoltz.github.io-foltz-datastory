@@ -1,0 +1,215 @@
+/*Grid Layout*/
+
+section#title div,
+section#dataviz div,
+section#social div,
+section#datavizexp div,
+section#personal div,
+section#person div{
+   min-height: 350px;
+   padding-bottom: 50px;
+   padding-top: 50px;
+ }
+
+ /* header stuff*/
+ h1 {background: #910000A0;
+   border: 2px solid #78B9E3;
+   color: white;
+   font-size: 32px;
+   text-align: center}
+   padding: 15px;
+ h1 {
+   margin-bottom: 15px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   h2 {color:white;
+   font-size: 24px;}
+ }
+
+/*Grid Display*/
+section#title div{
+  display:block;
+  grid-gap: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+section#dataviz div{
+  display:block;
+  grid-gap: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+section#social {
+  display:block;
+  grid-gap: 15px;
+  padding-bottom: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+section#datavizexp {
+  display:grid;
+  width:400px;
+  height:700px;
+  grid-gap: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+}
+footer#personal {
+  display:block;
+  float:left;
+  grid-gap: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+}
+footer#personal2 {
+  display:block;
+  float:center;
+  grid-gap: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+}
+footer#personal3 {
+  display:block;
+  float:right;
+  grid-gap: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+}
+.column {
+  float: left;
+  width: 31%;
+  margin: 20px 1.15%;
+  height: 160px;
+}
+section#person {
+  display:block;
+  grid-gap: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+/*Font Stuff*/
+h1 {color: white;
+  font-size: 32px;}
+  text-shadow: 3px 2px red;
+h1 {
+  min-height: 150px;
+  margin-bottom: 15px;
+}
+h2 {color:white;
+font-size: 24px;}
+h2{
+  margin-bottom: 10px;
+}
+/*Image Settings*/
+img {
+  width: 100%;
+}
+section#personal div.content-wrapper img {
+ width: 100px;
+ float: left;
+ margin-right: 30px;
+}
+
+/* Fix iframe height issue */
+ div.video-container {
+   position: relative;
+   width: 100%;
+}
+div.video-container iframe {
+   position: absolute;
+   top: 0; left: 0;
+   margin-left: 15px;
+   width: 80%;
+   height: 80%;
+}
+
+/* Data-viz*/
+section#dataviz div{
+  grid-area: sidebar;
+  width: 400px;
+  height: 300px;
+  float:left;
+  background-color: #910000A0;
+  border: 2px solid #78B9E3;
+  padding: 15px;
+  display:block;
+  grid-gap: 250px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+
+}
+
+/* Social*/
+section#social div{
+  grid-area: section;
+  width: 400px;
+  height: 300px;
+  float:right;
+  background-color: #910000A0;
+  border: 2px solid #78B9E3;
+  padding: 15px;
+  display:grid;
+  grid-gap: 250px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr))
+}
+
+section#datavizexp div{
+  grid-area: section;
+  width: 600px;
+  height: 300px;
+  float:center;
+  background-color: #910000A0;
+  border: 2px solid #78B9E3;
+  padding: 15px;
+  display:grid;
+  grid-gap: 250px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr))
+}
+
+/* Personal */
+footer#personal div{
+  grid-area: footer;
+  width: 300px;
+  background-color: #910000A0;
+  border: 2px solid #78B9E3;
+  padding: 15px;
+  display:grid;
+  grid-gap: 250px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr))
+}
+footer#personal2 div{
+  grid-area: footer;
+  width: 300px;
+  background-color: #910000A0;
+  border: 2px solid #78B9E3;
+  padding: 15px;
+  display:grid;
+  grid-gap: 250px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr))
+}
+footer#personal3 div{
+  grid-area: footer;
+  width: 300px;
+  background-color: #910000A0;
+  border: 2px solid #78B9E3;
+  padding: 15px;
+  display:grid;
+  grid-gap: 250px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr))
+}
+section#person div{
+  grid-area: sidebar;
+  height: 700px;
+  background-color: #910000A0;
+  border: 2px solid #78B9E3;
+  padding: 15px;
+  display:grid;
+  grid-gap: 250px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr))
+}
